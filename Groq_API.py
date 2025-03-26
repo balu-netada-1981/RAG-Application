@@ -15,10 +15,10 @@ import time
 # Load environment variables
 load_dotenv()
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = os.getenv("HUGGINGFACEHUB_API_TOKEN", "")
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY", "")
+st.secrets= os.getenv("GROQ_API_KEY", "")
 
 # Ensure API key is available
-groq_api_key = os.getenv("GROQ_API_KEY")
+groq_api_key = st.secrets
 if not groq_api_key:
     st.error("GROQ API Key is missing. Please check your environment variables.")
     st.stop()
