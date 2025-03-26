@@ -11,4 +11,4 @@ streamlit
 sentence_transformers
 langchain_huggingface
 langchain_groq
-langchain_
+langchain
