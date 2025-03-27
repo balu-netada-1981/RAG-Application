@@ -14,8 +14,8 @@ import time
 
 # Load environment variables
 load_dotenv()
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = st.secrets["HUGGINGFACEHUB_API_TOKEN", ""]
-os.environ["GROQ_API_KEY"]= st.secrets["GROQ_API_KEY", ""]
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = st.secrets["HUGGINGFACEHUB_API_TOKEN"]
+os.environ["GROQ_API_KEY"]= st.secrets["GROQ_API_KEY"]
 
 # Ensure API key is available
 groq_api_key = os.environ["GROQ_API_KEY"]
